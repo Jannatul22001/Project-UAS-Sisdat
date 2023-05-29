@@ -55,7 +55,7 @@
                 $tgl_transaksi= $_POST['tgl_transaksi'];
                 $total= $_POST['total'];
 
-                $sqlUpdate =    "UPDATE penjualan SET no_penjualan='$no_penjualan', id_pelanggan='$id_pelanggan', tgl_transaksi='$tgl_transaksi', total='$total'
+                $sqlUpdate =    "UPDATE penjualan SET id_pelanggan='$id_pelanggan', tgl_transaksi='$tgl_transaksi', total='$total'
                                 WHERE no_penjualan='$no_penjualan'";
                 $queryUpdate = mysqli_query($conn, $sqlUpdate);
 
